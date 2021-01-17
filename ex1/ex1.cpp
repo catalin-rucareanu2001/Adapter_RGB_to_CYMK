@@ -1,4 +1,4 @@
-#include <iostream>
+﻿#include <iostream>
 #include <vector>
 #include <string>
 
@@ -145,3 +145,14 @@ int main(void)
 
     return 0;
 }
+/*
+    pros:
+        + Principiul de responsabilitate unică.
+          Puteți separa interfața sau codul de conversie a datelor de logica de afaceri principală a programului.
+        + Principiul deschis / închis.
+          Puteți introduce noi tipuri de adaptoare în program fără a rupe codul clientului existent,
+          atâta timp cât acestea funcționează cu adaptoarele prin interfața clientului.
+    cons:
+        - Complexitatea generală a codului crește deoarece trebuie să introduceți un set de noi interfețe și clase. 
+          Uneori este mai simplu doar să schimbi clasa de servicii, astfel încât să se potrivească cu restul codului tău.
+*/
